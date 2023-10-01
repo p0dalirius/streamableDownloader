@@ -1,4 +1,4 @@
-# streamableDownloader
+![](./.github/banner.png)
 
 <p align="center">
     A simple python script to download videos hosted on streamable from their link.
