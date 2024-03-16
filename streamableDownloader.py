@@ -20,10 +20,12 @@ def b_filesize(size):
 
 
 def parseArgs():
-    parser = argparse.ArgumentParser(description="Description message")
-    parser.add_argument("-u", "--url", default=None, required=True, help='Streamable URL')
-    parser.add_argument("-o", "--output-file", default=None, required=False, type=str, help='Output file')
-    parser.add_argument("-v", "--verbose", default=False, action="store_true", help='Verbose mode. (default: False)')
+    parser = argparse.ArgumentParser(description="Download videos hosted on streamable from their link.")
+
+    parser.add_argument("-u", "--url", default=None, required=True, help="Streamable URL")
+    parser.add_argument("-o", "--output-file", default=None, required=False, type=str, help="Output file")
+    parser.add_argument("-v", "--verbose", default=False, action="store_true", help="Verbose mode. (default: False)")
+
     return parser.parse_args()
 
 
@@ -59,7 +61,7 @@ if __name__ == '__main__':
     for source_name in sources.keys():
         url = sources[source_name]
         r = requests.head(url)
-        if r.headers['Content-Type'] in ['video/mp4']:
+        if r.headers["Content-Type"] in ["video/mp4"]:
 
             total_size = 0
             if 'Content-Length' in r.headers.keys():

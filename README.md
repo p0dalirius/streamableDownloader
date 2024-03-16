@@ -8,8 +8,6 @@
     <a href="https://www.youtube.com/c/Podalirius_?sub_confirmation=1" title="Subscribe"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCF_x5O7CSfr82AfNVTKOv_A?style=social"></a>
 </p>
 
-
-
 ## Streamable
 
 ![](./.github/streamable.png)
